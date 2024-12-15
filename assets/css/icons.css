@@ -1,0 +1,19 @@
+.icon {
+    width: 4rem; /* Circular container size */
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Make the container circular */
+    background-color: var(--accent-color); /* Green background */
+    overflow: hidden; /* Ensures content doesn't spill out */
+  }
+  
+  .icon img {
+    width: 100%; /* Ensures the image scales properly */
+    height: 100%;
+    object-fit: contain; /* Prevents image distortion */
+    mix-blend-mode: multiply; /* Removes white "fake" background */
+    background-color: transparent;
+  }
+  
