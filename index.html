@@ -20,7 +20,49 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/icons.css">
   </head>
-  
+  <body class="theme-red">
+    <!-- Back to top button -->
+    <div class="btn-back_to_top">
+      <span class="ti-arrow-up"></span>
+    </div>
+    <!-- Setting button -->
+    <div class="config">
+      <div class="template-config">
+        <!-- Settings -->
+        <div class="d-block">
+          <button class="btn btn-fab btn-sm" id="sideel" title="Settings">
+            <span class="ti-settings"></span>
+          </button>
+        </div>
+        <!-- Puschase -->
+        <div class="d-block">
+          <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left">
+            <span class="ti-download"></span>
+          </a>
+        </div>
+        Help
+        <div class="d-block">
+          <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left">
+            <span class="ti-help"></span>
+          </a>
+        </div>
+      </div>
+      <div class="set-menu">
+        <p>Select Color</p>
+        <div class="color-bar" data-toggle="selected">
+          <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
+          <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+          <span class="color-item bg-theme-green" data-class="theme-green"></span>
+          <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+          <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+        </div>
+        <select class="custom-select d-block my-2" id="change-page">
+          <option value="">Choose Page</option>
+          <option value="index">Topbar</option>
+          <option value="index-2">Minibar</option>
+        </select>
+      </div>
+    </div>
     <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
       <!-- Navbar -->
       <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
@@ -38,7 +80,10 @@
                 <a href="#about" class="nav-link" data-animate="scrolling">About</a>
               </li>
               <li class="nav-item">
-                <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+                <a href="#education" class="nav-link" data-animate="scrolling">Education & Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link" data-animate="scrolling">skills</a>
               </li>
               <li class="nav-item">
                 <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
@@ -48,6 +93,7 @@
               <li class="nav-item">
                 <button class="btn btn-fab btn-theme no-shadow">En</button>
               </li>
+              
             </ul>
           </div>
         </div>
@@ -96,7 +142,7 @@
           </div>
         </div>
       </div>
-      <div class="container py-6">
+      <div class="container py-6" id="skills">
         <h1 class="text-center fw-normal wow fadeInUp">My Skills</h1>
         <div class="row py-3">
           <div class="col-12">
@@ -151,8 +197,9 @@
       </div>
       
       
-      <div class="container pt-5">
+      <div class="container pt-5" id="education">
         <div class="row">
+          <!-- Education Column -->
           <div class="col-md-6 wow fadeInRight">
             <h2 class="fw-normal">Education</h2>
             <ul class="timeline mt-4 pr-md-5">
@@ -169,30 +216,35 @@
                 <div class="details">
                   <h5>Ma'ayan-Shachar</h5>
                   <small class="fg-theme">Ein HaHoresh</small>
-                  <p>I completed 10 units in Computer Science, 5 units in Physics, 5 units in Mathematics, and 5 units in English</p>
+                  <p>I completed 10 units in Computer Science, 5 units in Physics, 5 units in Mathematics, and 5 units in English.</p>
                 </div>
               </li>
             </ul>
           </div>
+      
+          <!-- Projects Column -->
           <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
             <h2 class="fw-normal">Projects</h2>
             <ul class="timeline mt-4 pr-md-5">
               <li>
-                <div class="title"> Current</div>
+                <div class="title">Current</div>
                 <div class="details">
                   <h5>
-                    <a href="https://github.com/ItayOlivcovitz/cartworks" target="_blank" style="text-decoration: underline; text-decoration-style: dotted;"> Microservices with Spring <i class="fa-solid fa-link"></i>
+                    <a href="https://github.com/ItayOlivcovitz/cartworks" target="_blank" style="text-decoration: underline; text-decoration-style: dotted;">
+                      Microservices with Spring <i class="fa-solid fa-link"></i>
                     </a>
                   </h5>
                   <small class="fg-theme">University of Haifa</small>
                   <p> I gained hands-on experience in designing and implementing production-ready, scalable microservices using <span style="color: #007BFF;">Java</span>, <span style="color: #007BFF;">Spring Boot</span>, and <span style="color: #007BFF;">Spring Cloud</span>. <br> Focused on service configuration, security, and resilience with <span style="color: #007BFF;">Docker</span> and <span style="color: #007BFF;">Kubernetes</span> integration. <br> Developed three microservices: <span style="color: #007BFF;">Users</span>, <span style="color: #007BFF;">Products</span>, <span style="color: #007BFF;">Orders</span>. <br> Implemented a <span style="color: #007BFF;">Config Server</span> for centralized and consistent application configurations. </p>
+
                 </div>
               </li>
               <li>
-                <div class="title">2024/11 </div>
+                <div class="title">2024/11</div>
                 <div class="details">
                   <h5>
-                    <a href="https://github.com/ItayOlivcovitz/Scalable_Web_Application" target="_blank" style="text-decoration: underline; text-decoration-style: dotted;"> Scalable Web Application <i class="fa-solid fa-link"></i>
+                    <a href="https://github.com/ItayOlivcovitz/Scalable_Web_Application" target="_blank" style="text-decoration: underline; text-decoration-style: dotted;">
+                      Scalable Web Application <i class="fa-solid fa-link"></i>
                     </a>
                   </h5>
                   <small class="fg-theme">Dockerized Scalable Web Application</small>
@@ -200,22 +252,26 @@
                     <span style="color: #FF5733;">NGINX</span> was configured as a <span style="color: #FF5733;">load balancer</span>. Cookie-based <span style="color: #FF5733;">session stickiness</span> was implemented for 5 minutes.
                   </p>
                 </div>
+              </li>
               <li>
-                <div class="title">2023/07 – 2024/08</div>
+                <div class="title">2023–2024</div>
                 <div class="details">
                   <h5>
-                    <a href="https://github.com/ItayOlivcovitz/protfolio" target="_blank" style="text-decoration: underline; text-decoration-style: dotted;"> Final project - Leket Israel <i class="fa-solid fa-link"></i>
+                    <a href="https://github.com/ItayOlivcovitz/protfolio" target="_blank" style="text-decoration: underline; text-decoration-style: dotted;">
+                      Final Project - Leket Israel <i class="fa-solid fa-link"></i>
                     </a>
                   </h5>
                   <small class="fg-theme">Volunteer Registration and Management System</small>
-                  <p> I developed a <span style="color: #DAA520;">web portal</span> in collaboration with <span style="color: #DAA520;">Leket Israel</span> to streamline <span style="color: #DAA520;">volunteer registration</span> and <span style="color: #DAA520;">management</span> for <span style="color: #DAA520;">volunteers</span>, <span style="color: #DAA520;">employees</span>, and <span style="color: #DAA520;">farmers</span>. <br> The system was designed specifically for <span style="color: #DAA520;">volunteers</span>, <span style="color: #DAA520;">employees</span>, and <span style="color: #DAA520;">farmers</span> to enhance efficiency and usability. <br> Built using <span style="color: #DAA520;">Java</span> with the <span style="color: #DAA520;">Spring Framework</span>, featuring <span style="color: #DAA520;">Spring Controllers</span>, <span style="color: #DAA520;">RestControllers</span>, <span style="color: #DAA520;">Spring Security</span>, and <span style="color: #DAA520;">Spring Data/JPA</span>. <br> Integrated <span style="color: #DAA520;">Google API</span> for <span style="color: #DAA520;">maps and email functionality</span>. <br> Crafted the front-end with <span style="color: #DAA520;">Thymeleaf</span> and designed a <span style="color: #DAA520;">modular architecture</span> using <span style="color: #DAA520;">Maven</span> for project management. </p>
+                  <p>
+                    <p> I developed a <span style="color: #DAA520;">web portal</span> in collaboration with <span style="color: #DAA520;">Leket Israel</span> to streamline <span style="color: #DAA520;">volunteer registration</span> and <span style="color: #DAA520;">management</span> for <span style="color: #DAA520;">volunteers</span>, <span style="color: #DAA520;">employees</span>, and <span style="color: #DAA520;">farmers</span>. <br> The system was designed specifically for <span style="color: #DAA520;">volunteers</span>, <span style="color: #DAA520;">employees</span>, and <span style="color: #DAA520;">farmers</span> to enhance efficiency and usability. <br> Built using <span style="color: #DAA520;">Java</span> with the <span style="color: #DAA520;">Spring Framework</span>, featuring <span style="color: #DAA520;">Spring Controllers</span>, <span style="color: #DAA520;">RestControllers</span>, <span style="color: #DAA520;">Spring Security</span>, and <span style="color: #DAA520;">Spring Data/JPA</span>. <br> Integrated <span style="color: #DAA520;">Google API</span> for <span style="color: #DAA520;">maps and email functionality</span>. <br> Crafted the front-end with <span style="color: #DAA520;">Thymeleaf</span> and designed a <span style="color: #DAA520;">modular architecture</span> using <span style="color: #DAA520;">Maven</span> for project management. </p>
+                  </p>
                 </div>
               </li>
+            </ul>
           </div>
-          </ul>
         </div>
       </div>
-    </div>
+      
    <!-- </div>
     <div class="vg-page page-service">
       <div class="container">
@@ -541,7 +597,7 @@
     </div> -->
     <!-- End Contact -->
     <!-- Footer -->
-    <div class="vg-footer">
+    <div class="vg-footer" id="contact">
       <h1 class="text-center">Let's Connect</h1>
       <div class="container">
         <div class="row">
