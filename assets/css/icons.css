@@ -1,19 +1,44 @@
 .icon {
-    width: 4rem; /* Circular container size */
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%; /* Make the container circular */
-    background-color: var(--accent-color); /* Green background */
-    overflow: hidden; /* Ensures content doesn't spill out */
+  width: 4rem; /* Default size */
+  height: 4rem; /* Maintain 1:1 aspect ratio for circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60%; /* Ensures perfect circular shape */
+  background-color: var(--accent-color); /* Background color */
+  overflow: hidden; /* Prevent content spill */
+  box-sizing: border-box; /* Ensures padding/margin doesn't distort the shape */
+}
+
+.icon img {
+  width: 100%; /* Fills container */
+  height: 100%; 
+  object-fit: contain; /* Prevents distortion */
+  background-color: transparent;
+  display: block; /* Avoids any whitespace issues from inline elements */
+}
+
+/* Increase container size for tablets */
+@media (max-width: 768px) {
+  .icon {
+    width: 5rem; /* Larger container */
+    height: 5rem; /* Maintain circle */
   }
+}
+
+/* Increase container size for mobile phones */
+@media (max-width: 480px) {
+  .icon {
+    width: 4rem; /* Largest size */
+    height: 4rem; /* Maintain 1:1 for circle */
   
+  }
+
   .icon img {
-    width: 100%; /* Ensures the image scales properly */
-    height: 100%;
-    object-fit: contain; /* Prevents image distortion */
-    mix-blend-mode: multiply; /* Removes white "fake" background */
+    width: 85%; /* Fills container */
+    height: 85%; 
+    object-fit: contain; /* Prevents distortion */
     background-color: transparent;
+    display: block; /* Avoids any whitespace issues from inline elements */
   }
-  
+}
