@@ -19,50 +19,17 @@
     <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/list.css">
+
+
+    
   </head>
   <body class="theme-red">
     <!-- Back to top button -->
     <div class="btn-back_to_top">
       <span class="ti-arrow-up"></span>
     </div>
-    <!-- Setting button -->
-    <div class="config">
-      <div class="template-config">
-        <!-- Settings -->
-        <div class="d-block">
-          <button class="btn btn-fab btn-sm" id="sideel" title="Settings">
-            <span class="ti-settings"></span>
-          </button>
-        </div>
-        <!-- Puschase -->
-        <div class="d-block">
-          <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left">
-            <span class="ti-download"></span>
-          </a>
-        </div>
-        Help
-        <div class="d-block">
-          <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left">
-            <span class="ti-help"></span>
-          </a>
-        </div>
-      </div>
-      <div class="set-menu">
-        <p>Select Color</p>
-        <div class="color-bar" data-toggle="selected">
-          <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
-          <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
-          <span class="color-item bg-theme-green" data-class="theme-green"></span>
-          <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
-          <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
-        </div>
-        <select class="custom-select d-block my-2" id="change-page">
-          <option value="">Choose Page</option>
-          <option value="index">Topbar</option>
-          <option value="index-2">Minibar</option>
-        </select>
-      </div>
-    </div>
+    
     <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
       <!-- Navbar -->
       <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
@@ -80,11 +47,15 @@
                 <a href="#about" class="nav-link" data-animate="scrolling">About</a>
               </li>
               <li class="nav-item">
-                <a href="#education" class="nav-link" data-animate="scrolling">Education & Projects</a>
+                <a href="#mindset" class="nav-link" data-animate="scrolling">Mindset</a>
               </li>
               <li class="nav-item">
-                <a href="#skills" class="nav-link" data-animate="scrolling">skills</a>
+                <a href="#skills" class="nav-link" data-animate="scrolling">Skills</a>
               </li>
+              <li class="nav-item">
+                <a href="#education" class="nav-link" data-animate="scrolling">Education & Projects</a>
+              </li>
+            
               <li class="nav-item">
                 <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
               </li>
@@ -99,6 +70,8 @@
         </div>
       </div>
       <!-- End Navbar -->
+
+      
       <!-- Caption header -->
       <div class="caption-header text-center wow zoomInDown">
         <h5 class="fw-normal">Welcome</h5>
@@ -120,70 +93,162 @@
           </div>
           <div class="col-lg-6 offset-lg-1 wow fadeInRight">
             <h1 class="fw-light">Itay Olivcovitz</h1>
-            <h5 class="fg-theme mb-3"></h5>Software Developer <p class="text-muted">Recent Computer Science and Information Systems graduate passionate about software development and eager to contribute to a dynamic and innovative company. As a proactive self-learner, I thrive on embracing new challenges and continuously expanding my technical expertise. I am enthusiastic about leveraging my skills and knowledge to develop impactful solutions and grow professionally within the tech industry.</p>
+            <h5 class="fg-theme mb-3"></h5>Software Developer
+            <p class="text-muted">
+              Recent Computer Science and Information Systems graduate passionate about software development...
+            </p>
             <ul class="theme-list">
-              <li>
-                <b>Degree:</b> B.Sc in Computer Science and Information Systems
-              </li>
-              <li>
-                <b>Phone:</b> 054-5337330
-              </li>
-              <li>
-                <b>Address:</b> Marvad Haksamim , Even Yehuda
-              </li>
-              <li>
-                <b>Age:</b> 25
-              </li>
-              <li>
-                <b>Email:</b> itay.olivcovitz@gmail.com
-              </li>
+              <li><b>Degree:</b> B.Sc in Computer Science and Information Systems</li>
+              <li><b>Phone:</b> 054-5337330</li>
+              <li><b>Address:</b> Marvad Haksamim, Even Yehuda</li>
+              <li><b>Age:</b> 25</li>
+              <li><b>Email:</b> itay.olivcovitz@gmail.com</li>
             </ul>
             <button class="btn btn-theme-outline">Download CV</button>
           </div>
         </div>
       </div>
-      <div class="container py-6" id="skills">
-        <h1 class="text-center fw-normal wow fadeInUp">My Skills</h1>
+<!-- Mindset Section -->
+<div class="container py-6 pt-5" id="mindset">
+  <!-- Title -->
+  <h1 class="text-center fw-normal wow fadeInUp mt-5 mb-5">Mindset</h1>
+
+  <!-- Grid for Mindset Circles -->
+  <div class="circle-container">
+    <!-- Circle 1: Thinker -->
+    <div class="circle-wrapper wow fadeInLeft">
+      <div class="circle" style="background-color: #007bff;">
+        <i class="fas fa-lightbulb"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">Thinker</div>
+      <div class="circle-description text-center">
+        I approach challenges with creativity and strategic thinking.
+      </div>
+    </div>
+
+    <!-- Circle 2: Self-Learner -->
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.2s">
+      <div class="circle" style="background-color: #28a745;">
+        <i class="fas fa-book-open"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">Self-Learner</div>
+      <div class="circle-description text-center">
+        Driven to continuously learn and grow independently.
+      </div>
+    </div>
+
+    <!-- Circle 3: Team Player -->
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.4s">
+      <div class="circle" style="background-color: #ffc107;">
+        <i class="fas fa-users"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">Team Player</div>
+      <div class="circle-description text-center">
+        I collaborate effectively and contribute to team success.
+      </div>
+    </div>
+
+    <!-- Circle 4: Self-Motivated -->
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.6s">
+      <div class="circle" style="background-color: #ff5733;">
+        <i class="fas fa-rocket"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">Self-Motivated</div>
+      <div class="circle-description text-center">
+        I seek opportunities to learn, improve, and master new technologies.
+      </div>
+    </div>
+
+    <!-- Circle 5: AI Collaborator -->
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.8s">
+      <div class="circle" style="background-color: #6f42c1;">
+        <i class="fas fa-robot"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">AI Collaborator</div>
+      <div class="circle-description text-center">
+        I utilize AI tools to innovate, optimize, and learn faster.
+      </div>
+    </div>
+
+    <!-- Circle 6: Goal Achiever -->
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="1s">
+      <div class="circle" style="background-color: #17a2b8;">
+        <i class="fas fa-trophy"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">Goal Achiever</div>
+      <div class="circle-description text-center">
+        I tackle tasks with focus and deliver results beyond expectations.
+      </div>
+    </div>
+
+    <!-- Circle 7: Fast Learner -->
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="1.2s">
+      <div class="circle" style="background-color: #e83e8c;">
+        <i class="fas fa-bolt"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">Fast Learner</div>
+      <div class="circle-description text-center">
+        I quickly adapt and turn challenges into growth opportunities.
+      </div>
+    </div>
+
+    <!-- Circle 8: Challenge Seeker -->
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="1.4s">
+      <div class="circle" style="background-color: #dc3545;">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">Challenge Seeker</div>
+      <div class="circle-description text-center">
+        I see tough challenges as chances to grow and improve personally.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+      
+      
+      
+      
+    
+      <!-- My Skills Section -->
+      <div class="container py-6 pt-5" id="skills">
+        <h1 class="text-center fw-normal wow fadeInUp mt-5">Skills</h1>
         <div class="row py-3">
           <div class="col-12">
             <div class="d-flex flex-nowrap overflow-auto icon-container">
               <ul class="icon-card-list d-flex justify-content-start wow fadeInUp">
-                <!-- Java -->
                 <li class="me-3" style="--accent-color: #FF5733;">
                   <div class="icon" style="background-color: #f6f6f6;">
                     <img src="assets/img/logo/Java.png" alt="Java Icon" class="icon-image">
                   </div>
                   <div class="title text-center">Java</div>
                 </li>
-                <!-- MySQL -->
                 <li class="me-3" style="--accent-color:#f20071">
                   <div class="icon" style="background-color: #f6f6f6;">
                     <img src="assets/img/logo/mySql.png" alt="MySQL Icon" class="icon-image">
                   </div>
                   <div class="title text-center">MySQL</div>
                 </li>
-                <!-- REST API -->
                 <li class="me-3" style="--accent-color:#75bb1d">
                   <div class="icon" style="background-color: #f6f6f6;">
                     <img src="assets/img/logo/Rest Api.png" alt="REST API Icon" class="icon-image">
                   </div>
                   <div class="title text-center">REST API</div>
                 </li>
-                <!-- Spring Boot -->
                 <li class="me-3" style="--accent-color:#75bb1d">
                   <div class="icon" style="background-color: #f6f6f6;">
                     <img src="assets/img/logo/Springboot.png" alt="SpringBoot Icon" class="icon-image">
                   </div>
                   <div class="title text-center">Spring Boot</div>
                 </li>
-                <!-- Docker -->
                 <li class="me-3" style="--accent-color:#75bb1d">
                   <div class="icon" style="background-color: #f6f6f6;">
                     <img src="assets/img/logo/Docker.png" alt="Docker Icon" class="icon-image">
                   </div>
                   <div class="title text-center">Docker</div>
                 </li>
-                <!-- Git -->
                 <li class="me-3" style="--accent-color:#994D7F">
                   <div class="icon" style="background-color: #f6f6f6;">
                     <img src="assets/img/logo/github.png" alt="Git Icon" class="icon-image">
@@ -195,10 +260,12 @@
           </div>
         </div>
       </div>
+    </div>
+    
       
       
-      <div class="container pt-5" id="education">
-        <div class="row">
+      <div class="container pt-5 mt-5 " id="education">
+        <div class="row mt-5">
           <!-- Education Column -->
           <div class="col-md-6 wow fadeInRight">
             <h2 class="fw-normal">Education</h2>
@@ -221,6 +288,7 @@
               </li>
             </ul>
           </div>
+          
       
           <!-- Projects Column -->
           <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">

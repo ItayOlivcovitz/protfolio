@@ -1,0 +1,61 @@
+/* Container for grid layout */
+.circle-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 40px 20px; /* Spacing between rows and columns */
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px;
+  justify-items: center; /* Center items horizontally */
+  text-align: center; /* Center-align text under circles */
+}
+
+/* Circle wrapper for each item */
+.circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between circle, title, and description */
+}
+
+/* Circle styles */
+.circle {
+  width: 120px; /* Adjust size for large circles */
+  height: 120px;
+  border-radius: 50%; /* Perfect circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem; /* Icon size */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Text style */
+.circle-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Description style */
+.circle-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 250px; /* Restrict text width */
+  margin: 0;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .circle-container {
+    grid-template-columns: repeat(1, 1fr); /* One column for mobile */
+    gap: 30px; /* Adjust spacing */
+  }
+
+  .circle {
+    width: 100px; /* Smaller circles for mobile */
+    height: 100px;
+    font-size: 2rem; /* Adjust icon size */
+  }
+}
