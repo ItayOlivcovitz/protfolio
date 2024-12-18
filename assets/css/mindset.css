@@ -1,5 +1,5 @@
 /* Container for grid layout */
-.circle-container {
+.icon-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 10px 5px; /* Reduced gap: 10px vertical, 5px horizontal */
@@ -8,57 +8,61 @@
   padding: 0;
   justify-items: center; /* Align items horizontally in the center */
   text-align: center; /* Center-align text under circles */
+  color: #f8f8f8; /* White color */
 }
 
-/* Circle wrapper for each item */
-.circle-wrapper {
+
+
+/* icon wrapper for each item */
+.icon-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px; /* Smaller spacing between icon and text */
 }
 
-/* Circle styles */
-.circle {
-  width: 100px; /* Smaller circle size */
+/* icon styles */
+.icon {
+  width: 100px; /* Smaller icon size */
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem; /* Icon size */
+  
 }
-/* Ensure icons inside .circle are white */
-.circle i {
-  color: #eb2d0b; /* White color */
+/* Ensure icons inside .icon are white */
+.icon i {
+  color: #e2493b; /* White color */
 }
 
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .circle-container {
+  .icon-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
     gap: 8px 5px; /* Tighter spacing on mobile */
     padding: 0;
   }
 
   /* Center the last element on mobile */
-  .circle-wrapper.centered {
+  .icon-wrapper.centered {
     grid-column: span 2; /* Force the element to span 2 columns */
     justify-self: center; /* Align it to the center */
   }
 
-  .circle {
+  .icon {
     width: 80px; /* Smaller circle on mobile */
     height: 80px;
     font-size: 2rem;
   }
 
-  .circle-text {
+  .icon-text {
     font-size: 0.9rem;
   }
 
   /* Compressed text style for description */
-.circle-description {
+.icon-description {
   font-size: 0.85rem; /* Smaller font size */
   line-height: 1.2; /* Tighter line spacing */
   max-width: 200px; /* Restrict the width of the text */
