@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/icons.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/list.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mindset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/checklist.css">
 
 
@@ -49,15 +49,15 @@
               </li>
 
             </li>
-            <li class="nav-item">
-            <a href="#courses" class="nav-link" data-animate="scrolling">Courses</a>
-          </li>
+           
               <li class="nav-item">
                 <a href="#mindset" class="nav-link" data-animate="scrolling">Mindset</a>
               </li>
               <li class="nav-item">
                 <a href="#skills" class="nav-link" data-animate="scrolling">Skills</a>
-            
+                <li class="nav-item">
+                  <a href="#courses" class="nav-link" data-animate="scrolling">Courses</a>
+                </li>
              
               <li class="nav-item">
                 <a href="#education" class="nav-link" data-animate="scrolling">Education & Projects</a>
@@ -116,42 +116,20 @@
         </div>
       </div>
 
-       <!-- Courses Section -->
-<section class="courses "  id="courses" >
-  <div class="container py-5 wow fadeInLeft">
-    <h1 class="text-center mb-4 fw-normal wow fadeInLeft mt-5">Courses</h1>
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="check-list" style="padding-left: 0; margin-left: 0;">
-          <li>
-            <a href="https://www.udemy.com/course/master-microservices-with-spring-docker-kubernetes/?couponCode=ST21MT121624" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              Master Microservices with Spring, Docker, and Kubernetes (in progress)
-            </a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/course/spring-hibernate-tutorial/?couponCode=ST21MT121624" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              Spring Boot 3: Learn Spring 6, Spring Core, Spring REST, Spring MVC, Spring Security, Thymeleaf, JPA, Hibernate, MySQL
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+     
+
+
 <!-- Mindset Section -->
 <div class="container py-6 pt-5" id="mindset">
   <!-- Title -->
-  <h1 class="text-center fw-normal wow fadeInUp mt-5 mb-4">Mindset</h1> <!-- Use mb-4 to reduce bottom margin -->
+  <h1 class="text-center fw-normal mt-5 mb-5">Mindset</h1>
 
   <!-- Grid for Mindset Circles -->
-  <div class="circle-container mt-3"> <!-- Added mt-3 for top margin -->
+  <div class="circle-container mt-3">
+
     <!-- Circle 1: Thinker -->
     <div class="circle-wrapper wow fadeInLeft">
-      <div class="circle" style="background-color: #007bff;">
+      <div class="circle">
         <i class="fas fa-lightbulb"></i>
       </div>
       <div class="circle-text mt-2 fw-bold">Thinker</div>
@@ -162,7 +140,7 @@
 
     <!-- Circle 2: Self-Learner -->
     <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.1s">
-      <div class="circle" style="background-color: #28a745;">
+      <div class="circle">
         <i class="fas fa-book-open"></i>
       </div>
       <div class="circle-text mt-2 fw-bold">Self-Learner</div>
@@ -173,7 +151,7 @@
 
     <!-- Circle 3: Team Player -->
     <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.2s">
-      <div class="circle" style="background-color: #ffc107;">
+      <div class="circle">
         <i class="fas fa-users"></i>
       </div>
       <div class="circle-text mt-2 fw-bold">Team Player</div>
@@ -184,7 +162,7 @@
 
     <!-- Circle 4: Self-Motivated -->
     <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.3s">
-      <div class="circle" style="background-color: #ff5733;">
+      <div class="circle">
         <i class="fas fa-rocket"></i>
       </div>
       <div class="circle-text mt-2 fw-bold">Self-Motivated</div>
@@ -195,7 +173,7 @@
 
     <!-- Circle 5: AI Collaborator -->
     <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.4s">
-      <div class="circle" style="background-color: #6f42c1;">
+      <div class="circle">
         <i class="fas fa-robot"></i>
       </div>
       <div class="circle-text mt-2 fw-bold">AI Collaborator</div>
@@ -206,7 +184,7 @@
 
     <!-- Circle 6: Goal Achiever -->
     <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.5s">
-      <div class="circle" style="background-color: #17a2b8;">
+      <div class="circle">
         <i class="fas fa-trophy"></i>
       </div>
       <div class="circle-text mt-2 fw-bold">Goal Achiever</div>
@@ -217,7 +195,7 @@
 
     <!-- Circle 7: Fast Learner -->
     <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.6s">
-      <div class="circle" style="background-color: #e83e8c;">
+      <div class="circle">
         <i class="fas fa-bolt"></i>
       </div>
       <div class="circle-text mt-2 fw-bold">Fast Learner</div>
@@ -228,7 +206,7 @@
 
     <!-- Circle 8: Challenge Seeker -->
     <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.7s">
-      <div class="circle" style="background-color: #dc3545;">
+      <div class="circle">
         <i class="fas fa-star"></i>
       </div>
       <div class="circle-text mt-2 fw-bold">Challenge Seeker</div>
@@ -237,20 +215,22 @@
       </div>
     </div>
 
-<!-- Circle 9: Focused Visionary -->
-<div class="circle-wrapper centered wow fadeInLeft" data-wow-delay="0.8s">
-  <div class="circle" style="background-color: #6610f2;">
-    <i class="fas fa-bullseye"></i>
-  </div>
-  <div class="circle-text mt-2 fw-bold">Focused Visionary</div>
-  <div class="circle-description text-center">
-    I stay focused on goals and pursue long-term success with determination.
+    <!-- Circle 9: Focused Visionary -->
+    <div class="circle-wrapper centered wow fadeInLeft" data-wow-delay="0.8s">
+      <div class="circle">
+        <i class="fas fa-bullseye"></i>
+      </div>
+      <div class="circle-text mt-2 fw-bold">Focused Visionary</div>
+      <div class="circle-description text-center">
+        I stay focused on goals and pursue long-term success with determination.
+      </div>
+    </div>
+
   </div>
 </div>
 
 
-  </div>
-</div>
+
 
       
       
@@ -295,7 +275,32 @@
 </div>
 
  
-    
+      <!-- Courses Section -->
+<section class="courses "  id="courses" >
+  <div class="container py-5 wow fadeInLeft">
+    <h1 class="text-center mb-4 fw-normal wow fadeInLeft mt-5">Courses</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="check-list" style="padding-left: 0; margin-left: 0;">
+          <li>
+            <a href="https://www.udemy.com/course/master-microservices-with-spring-docker-kubernetes/?couponCode=ST21MT121624" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              Master Microservices with Spring, Docker, and Kubernetes (in progress)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/course/spring-hibernate-tutorial/?couponCode=ST21MT121624" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              Spring Boot 3: Learn Spring 6, Spring Core, Spring REST, Spring MVC, Spring Security, Thymeleaf, JPA, Hibernate, MySQL
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
       <div class="container pt-5 mt-5 " id="education">
         <h1 class="text-center fw-normal wow fadeInUp mt-5">Education & Projects</h1>
