@@ -1,12 +1,12 @@
 /* Container for grid layout */
 .circle-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for desktop */
-  gap: 40px 20px; /* Spacing between rows and columns */
-  max-width: 900px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px 5px; /* Reduced gap: 10px vertical, 5px horizontal */
+  max-width: 700px; /* Reduce max-width to tighten spacing */
   margin: auto;
-  padding: 0 20px;
-  justify-items: center; /* Center items horizontally */
+  padding: 0;
+  justify-items: center; /* Align items horizontally in the center */
   text-align: center; /* Center-align text under circles */
 }
 
@@ -15,63 +15,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px; /* Space between circle, title, and description */
+  gap: 4px; /* Smaller spacing between icon and text */
 }
 
 /* Circle styles */
 .circle {
-  width: 120px; /* Adjust size for large circles */
-  height: 120px;
-  border-radius: 50%; /* Perfect circle */
+  width: 100px; /* Smaller circle size */
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem; /* Icon size */
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  transition: transform 0.3s ease-in-out; /* Optional hover effect */
+  font-size: 2.5rem; /* Icon size */
 }
 
-/* Optional: Hover effect for desktop */
-.circle:hover {
-  transform: scale(1.1);
-}
-
-/* Text style */
-.circle-text {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-/* Description style */
-.circle-description {
-  font-size: 1rem;
-  line-height: 1.4;
-  max-width: 250px; /* Restrict text width */
-  margin: 0;
-}
-
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .circle-container {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for mobile */
-    gap: 20px;
-    padding: 0 10px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    gap: 8px 5px; /* Tighter spacing on mobile */
+    padding: 0;
   }
 
-  .circle-wrapper {
-    text-align: center;
-  }
-
-  /* Center the last circle in a row */
+  /* Center the last element on mobile */
   .circle-wrapper.centered {
-    grid-column: span 2; /* Make the item span two columns */
-    justify-self: center; /* Align to the center */
+    grid-column: span 2; /* Force the element to span 2 columns */
+    justify-self: center; /* Align it to the center */
   }
 
   .circle {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Smaller circle on mobile */
+    height: 80px;
     font-size: 2rem;
   }
+
+  .circle-text {
+    font-size: 0.9rem;
+  }
+
+  /* Compressed text style for description */
+.circle-description {
+  font-size: 0.85rem; /* Smaller font size */
+  line-height: 1.2; /* Tighter line spacing */
+  max-width: 200px; /* Restrict the width of the text */
+  margin: 0 auto; /* Center-align the text */
+  text-align: center; /* Ensure text is centered */
+}
+
 }

@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/icons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/list.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/checklist.css">
 
 
     
@@ -52,6 +53,10 @@
               <li class="nav-item">
                 <a href="#skills" class="nav-link" data-animate="scrolling">Skills</a>
               </li>
+                <li class="nav-item">
+                <a href="#courses" class="nav-link" data-animate="scrolling">Courses</a>
+              </li>
+             
               <li class="nav-item">
                 <a href="#education" class="nav-link" data-animate="scrolling">Education & Projects</a>
               </li>
@@ -111,10 +116,10 @@
 <!-- Mindset Section -->
 <div class="container py-6 pt-5" id="mindset">
   <!-- Title -->
-  <h1 class="text-center fw-normal wow fadeInUp mt-5 mb-5">Mindset</h1>
+  <h1 class="text-center fw-normal wow fadeInUp mt-5 mb-4">Mindset</h1> <!-- Use mb-4 to reduce bottom margin -->
 
   <!-- Grid for Mindset Circles -->
-  <div class="circle-container">
+  <div class="circle-container mt-3"> <!-- Added mt-3 for top margin -->
     <!-- Circle 1: Thinker -->
     <div class="circle-wrapper wow fadeInLeft">
       <div class="circle" style="background-color: #007bff;">
@@ -127,7 +132,7 @@
     </div>
 
     <!-- Circle 2: Self-Learner -->
-    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.2s">
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.1s">
       <div class="circle" style="background-color: #28a745;">
         <i class="fas fa-book-open"></i>
       </div>
@@ -138,7 +143,7 @@
     </div>
 
     <!-- Circle 3: Team Player -->
-    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.4s">
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.2s">
       <div class="circle" style="background-color: #ffc107;">
         <i class="fas fa-users"></i>
       </div>
@@ -149,7 +154,7 @@
     </div>
 
     <!-- Circle 4: Self-Motivated -->
-    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.6s">
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.3s">
       <div class="circle" style="background-color: #ff5733;">
         <i class="fas fa-rocket"></i>
       </div>
@@ -160,7 +165,7 @@
     </div>
 
     <!-- Circle 5: AI Collaborator -->
-    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.8s">
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.4s">
       <div class="circle" style="background-color: #6f42c1;">
         <i class="fas fa-robot"></i>
       </div>
@@ -171,7 +176,7 @@
     </div>
 
     <!-- Circle 6: Goal Achiever -->
-    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="1s">
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.5s">
       <div class="circle" style="background-color: #17a2b8;">
         <i class="fas fa-trophy"></i>
       </div>
@@ -182,7 +187,7 @@
     </div>
 
     <!-- Circle 7: Fast Learner -->
-    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="1.2s">
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.6s">
       <div class="circle" style="background-color: #e83e8c;">
         <i class="fas fa-bolt"></i>
       </div>
@@ -193,7 +198,7 @@
     </div>
 
     <!-- Circle 8: Challenge Seeker -->
-    <div class="circle-wrapper  wow fadeInLeft" data-wow-delay="1.4s">
+    <div class="circle-wrapper wow fadeInLeft" data-wow-delay="0.7s">
       <div class="circle" style="background-color: #dc3545;">
         <i class="fas fa-star"></i>
       </div>
@@ -203,8 +208,8 @@
       </div>
     </div>
 
-     <!-- Circle 9: Focused Visionary -->
-<div class="circle-wrapper centered  wow fadeInLeft " data-wow-delay="1.4s">
+<!-- Circle 9: Focused Visionary -->
+<div class="circle-wrapper centered wow fadeInLeft" data-wow-delay="0.8s">
   <div class="circle" style="background-color: #6610f2;">
     <i class="fas fa-bullseye"></i>
   </div>
@@ -214,69 +219,89 @@
   </div>
 </div>
 
+
+  </div>
+</div>
+
+      
+      
+
+    
+<!-- My Skills Section -->
+<div class="container py-5" id="skills">
+  <h1 class="text-center fw-normal mt-5">Skills</h1>
+  <div class="row gx-3 gy-3"> <!-- Slightly larger spacing -->
+    <!-- Skill 1 -->
+    <div class="col-md-2 col-sm-3 col-4 text-center">
+      <img src="assets/img/logo/Java.png" alt="Java Icon" class="img-fluid" style="max-width: 100px; height: auto;">
+      <div class="mt-2 fw-bold" style="font-size: 1.2rem;">Java</div>
+    </div>
+    <!-- Skill 2 -->
+    <div class="col-md-2 col-sm-3 col-4 text-center">
+      <img src="assets/img/logo/mySql.png" alt="MySQL Icon" class="img-fluid" style="max-width: 100px; height: auto;">
+      <div class="mt-2 fw-bold" style="font-size: 1.2rem;">MySQL</div>
+    </div>
+    <!-- Skill 3 -->
+    <div class="col-md-2 col-sm-3 col-4 text-center">
+      <img src="assets/img/logo/Rest Api.png" alt="REST API Icon" class="img-fluid" style="max-width: 100px; height: auto;">
+      <div class="mt-2 fw-bold" style="font-size: 1.2rem;">REST API</div>
+    </div>
+    <!-- Skill 4 -->
+    <div class="col-md-2 col-sm-3 col-4 text-center">
+      <img src="assets/img/logo/Springboot.png" alt="SpringBoot Icon" class="img-fluid" style="max-width: 100px; height: auto;">
+      <div class="mt-2 fw-bold" style="font-size: 1.2rem;">Spring Boot</div>
+    </div>
+    <!-- Skill 5 -->
+    <div class="col-md-2 col-sm-3 col-4 text-center">
+      <img src="assets/img/logo/Docker.png" alt="Docker Icon" class="img-fluid" style="max-width: 100px; height: auto;">
+      <div class="mt-2 fw-bold" style="font-size: 1.2rem;">Docker</div>
+    </div>
+    <!-- Skill 6 -->
+    <div class="col-md-2 col-sm-3 col-4 text-center">
+      <img src="assets/img/logo/github.png" alt="Git Icon" class="img-fluid" style="max-width: 100px; height: auto;">
+      <div class="mt-2 fw-bold" style="font-size: 1.2rem;">Git</div>
+    </div>
   </div>
 </div>
 
 
-      
-      
-      
-      
-      
+
+
     
-      <!-- My Skills Section -->
-      <div class="container py-6 pt-5" id="skills">
-        <h1 class="text-center fw-normal wow fadeInUp mt-5">Skills</h1>
-        <div class="row py-3">
-          <div class="col-12">
-            <div class="d-flex flex-nowrap overflow-auto icon-container">
-              <ul class="icon-card-list d-flex justify-content-start wow fadeInUp">
-                <li class="me-3" style="--accent-color: #FF5733;">
-                  <div class="icon" style="background-color: #f6f6f6;">
-                    <img src="assets/img/logo/Java.png" alt="Java Icon" class="icon-image">
-                  </div>
-                  <div class="title text-center">Java</div>
-                </li>
-                <li class="me-3" style="--accent-color:#f20071">
-                  <div class="icon" style="background-color: #f6f6f6;">
-                    <img src="assets/img/logo/mySql.png" alt="MySQL Icon" class="icon-image">
-                  </div>
-                  <div class="title text-center">MySQL</div>
-                </li>
-                <li class="me-3" style="--accent-color:#75bb1d">
-                  <div class="icon" style="background-color: #f6f6f6;">
-                    <img src="assets/img/logo/Rest Api.png" alt="REST API Icon" class="icon-image">
-                  </div>
-                  <div class="title text-center">REST API</div>
-                </li>
-                <li class="me-3" style="--accent-color:#75bb1d">
-                  <div class="icon" style="background-color: #f6f6f6;">
-                    <img src="assets/img/logo/Springboot.png" alt="SpringBoot Icon" class="icon-image">
-                  </div>
-                  <div class="title text-center">Spring Boot</div>
-                </li>
-                <li class="me-3" style="--accent-color:#75bb1d">
-                  <div class="icon" style="background-color: #f6f6f6;">
-                    <img src="assets/img/logo/Docker.png" alt="Docker Icon" class="icon-image">
-                  </div>
-                  <div class="title text-center">Docker</div>
-                </li>
-                <li class="me-3" style="--accent-color:#994D7F">
-                  <div class="icon" style="background-color: #f6f6f6;">
-                    <img src="assets/img/logo/github.png" alt="Git Icon" class="icon-image">
-                  </div>
-                  <div class="title text-center">Git</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+
+  <!-- Courses Section -->
+<section class="courses "  id="courses" >
+  <div class="container py-5 wow fadeInLeft">
+    <h1 class="text-center mb-4 fw-normal wow fadeInLeft mt-5">Courses</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="check-list" style="padding-left: 0; margin-left: 0;">
+          <li>
+            <a href="https://www.udemy.com/course/master-microservices-with-spring-docker-kubernetes/?couponCode=ST21MT121624" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              Master Microservices with Spring, Docker, and Kubernetes (in progress)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/course/spring-hibernate-tutorial/?couponCode=ST21MT121624" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              Spring Boot 3: Learn Spring 6, Spring Core, Spring REST, Spring MVC, Spring Security, Thymeleaf, JPA, Hibernate, MySQL
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
+</section>
+
+
+      
     
-      
-      
+
       <div class="container pt-5 mt-5 " id="education">
+        <h1 class="text-center fw-normal wow fadeInUp mt-5">Education & Projects</h1>
         <div class="row mt-5">
           <!-- Education Column -->
           <div class="col-md-6 wow fadeInRight">

@@ -1,0 +1,56 @@
+.courses .check-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    direction: ltr; /* Force Left-to-Right text direction */
+    text-align: left; /* Ensure text aligns to the left */
+    white-space: normal; /* Allow text wrapping */
+}
+
+.courses .check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem; /* Default text size for larger screens */
+    line-height: 1.6;
+}
+
+.courses .check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 4px; /* Adjust alignment */
+    width: 10px; /* Adjust size of checkmark */
+    height: 18px;
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .courses .check-list {
+        padding-left: 0; /* Remove extra padding on smaller screens */
+    }
+
+    .courses .check-list li {
+        font-size: 1.1rem; /* Smaller text size for mobile */
+        padding-left: 2rem; /* Slightly reduce padding for checkmark */
+        line-height: 1.4; /* Adjust line height for readability */
+        margin-bottom: 0.8rem;
+    }
+
+    .courses .check-list li:before {
+        width: 8px; /* Smaller checkmark size */
+        height: 14px;
+        border-width: 0 2px 2px 0; /* Thinner checkmark lines */
+    }
+
+    .courses h1 {
+        font-size: 2rem; /* Smaller title size on mobile */
+        text-align: center; /* Keep title centered */
+    }
+}
