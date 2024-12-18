@@ -27,6 +27,11 @@
   align-items: center;
   font-size: 2.5rem; /* Icon size */
 }
+/* Ensure icons inside .circle are white */
+.circle i {
+  color: #ffffff; /* White color */
+}
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
