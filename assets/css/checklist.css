@@ -1,6 +1,6 @@
 .courses .check-list {
     margin: 0;
-    padding-left: 1.2rem;
+    padding-left: 1rem; /* Slightly reduce padding */
     direction: ltr; /* Force Left-to-Right text direction */
     text-align: left; /* Ensure text aligns to the left */
     white-space: normal; /* Allow text wrapping */
@@ -9,10 +9,10 @@
 .courses .check-list li {
     position: relative;
     list-style-type: none;
-    padding-left: 2.5rem;
+    padding-left: 2rem; /* Reduce space for checkmark */
     margin-bottom: 0.5rem;
-    font-size: 1.6rem; /* Default text size for larger screens */
-    line-height: 1.6;
+    font-size: 16px; /* Smaller default text size */
+    line-height: 1.5; /* Adjusted line height */
 }
 
 .courses .check-list li:before {
@@ -20,10 +20,10 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 4px; /* Adjust alignment */
-    width: 10px; /* Adjust size of checkmark */
-    height: 18px;
-    border-width: 0 3px 3px 0;
+    top: 4px;
+    width: 8px; /* Adjust size of checkmark */
+    height: 16px;
+    border-width: 0 2px 2px 0; /* Thinner checkmark */
     border-style: solid;
     border-color: #00a8a8;
     transform-origin: bottom left;
@@ -33,24 +33,25 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .courses .check-list {
-        padding-left: 0; /* Remove extra padding on smaller screens */
+        padding-left: 0.5rem; /* Further reduce padding */
     }
 
     .courses .check-list li {
-        font-size: 1.1rem; /* Smaller text size for mobile */
-        padding-left: 2rem; /* Slightly reduce padding for checkmark */
-        line-height: 1.4; /* Adjust line height for readability */
-        margin-bottom: 0.8rem;
+        font-size: 0.5rem; /* Smaller text size for mobile */
+        padding-left: 1.5rem; /* Adjust padding for checkmark */
+        line-height: 1.3; /* Reduce line height for compact text */
+        margin-bottom: 0.6rem; /* Smaller spacing between items */
     }
 
     .courses .check-list li:before {
-        width: 8px; /* Smaller checkmark size */
-        height: 14px;
-        border-width: 0 2px 2px 0; /* Thinner checkmark lines */
+        width: 6px; /* Smaller checkmark size */
+        height: 12px;
+        border-width: 0 1.5px 1.5px 0; /* Thinner checkmark lines */
     }
 
     .courses h1 {
-        font-size: 2rem; /* Smaller title size on mobile */
-        text-align: center; /* Keep title centered */
+        font-size: 1.5rem; /* Smaller title size */
+        text-align: center;
+        margin-bottom: 1rem; /* Add some space below the title */
     }
 }

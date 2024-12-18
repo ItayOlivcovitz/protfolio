@@ -1,58 +1,80 @@
-/* Parent container to enable sliding */
+/* Container for icons */
 .icon-container {
   display: flex; /* Flexbox layout */
-  flex-wrap: nowrap; /* Prevent wrapping */
-  overflow-x: auto; /* Horizontal scroll */
-  gap: 1rem; /* Space between icons */
-  padding-bottom: 1rem; /* Avoid cut-off at bottom due to scroll */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the icons horizontally */
+  gap: 2rem; /* Increased spacing between items */
+  padding: 1rem 0; /* Padding above and below the container */
 }
 
+/* Hide scrollbar for horizontal scrolling (if necessary) */
 .icon-container::-webkit-scrollbar {
   display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
 }
 
 .icon {
-  flex: 0 0 auto; /* Prevent icons from shrinking */
-  width: 4rem; /* Default size */
-  height: 4rem;
+  flex: 0 1 calc(16% - 2rem); /* Flexible icons with proper wrapping */
   display: flex;
+  flex-direction: column; /* Stack image and text vertically */
   justify-content: center;
   align-items: center;
-  border-radius: 50%; /* Circular shape */
-  background-color: var(--accent-color);
-  overflow: hidden;
-  box-sizing: border-box; /* Keep dimensions stable */
+  gap: 0.5rem; /* Space between image and text */
+  text-align: center; /* Center-align text */
 }
 
 .icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background-color: transparent;
+  width: 4.5rem; /* Adjusted size for icons */
+  height: 4.5rem;
+  object-fit: contain; /* Prevent distortion */
+  display: block; /* Remove extra space below image */
+  border-radius: 50%; /* Optional: circular image */
+  background-color: var(--accent-color, #f0f0f0); /* Fallback for theme color */
+  padding: 0.5rem; /* Padding inside circular background */
+}
+
+.icon div {
+  font-size: 0.9rem; /* Adjust text size */
+  font-weight: 500; /* Semi-bold text */
+  color: #333; /* Darker color for better visibility */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 /* Tablet size adjustments */
 @media (max-width: 768px) {
   .icon {
-    width: 5rem; /* Slightly larger */
-    height: 5rem;
-  }
-}
-
-/* Increase container size for mobile phones */
-@media (max-width: 480px) {
-  .icon {
-    width: 4rem; /* Largest size */
-    height: 4rem; /* Maintain 1:1 for circle */
-  
+    flex: 0 1 calc(25% - 1rem); /* Increase icon width for tablets */
   }
 
   .icon img {
-    width: 85%; /* Fills container */
-    height: 85%; 
-    object-fit: contain; /* Prevents distortion */
-    background-color: transparent;
-    display: block; /* Avoids any whitespace issues from inline elements */
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .icon div {
+    font-size: 0.85rem;
   }
 }
+
+/* Mobile size adjustments */
+@media (max-width: 576px) {
+  .icon-container {
+    gap: 0.5rem 0; /* Small horizontal gap, add vertical spacing */
+    justify-content: space-between; /* Distribute icons evenly */
+  }
+
+  .icon {
+    flex: 0 1 33%; /* Three icons per row */
+    margin: 0 0 1.5rem 0; /* Add bottom margin for vertical spacing */
+  }
+
+  .icon img {
+    width: 4.5rem; /* Adjust image size for mobile */
+    height: 4.5rem;
+  }
+
+  .icon div {
+    font-size: 0.75rem; /* Slightly smaller text */
+  }
+}
+
+
