@@ -53,10 +53,13 @@
 
 /* Page */
 .vg-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  display: block;
+  padding: 80px 0;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh; /* Use min-height instead of height */
+
 }
 
 .page-home {  
