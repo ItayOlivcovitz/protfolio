@@ -44,16 +44,33 @@
 /* Responsive adjustments for tablets */
 @media (max-width: 768px) {
   .icon-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Reduce the gap for better fit */
+    padding: 0 10px; /* Add some padding to prevent clipping */
   }
   .icon {
-    width: 100px; /* Adjust width for smaller screens */
-    height: 100px; /* Adjust height for smaller screens */
+    width: 70px; /* Smaller circle on mobile */
+    height: 70px;
+    font-size: 1.8rem; /* Adjust font size */
   }
   .icon i {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.8rem; /* Smaller icon size */
   }
+
+  /* Reduce gap between icon and description */
+.icon-wrapper {
+  gap: -4px; /* Decrease spacing between the elements in the icon-wrapper */
 }
+
+/* Reduce margin above and below the description */
+.icon-description {
+  margin-top: 4px; /* Reduce the space between the description and the title */
+  font-size: 0.85rem; /* Ensure text fits well */
+  line-height: 1.2; /* Tighter line spacing for better compactness */
+}
+
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .icon-container {
