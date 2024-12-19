@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Default: 3 items per row */
   gap: 20px;
+  height: auto; /* Allow container height to adjust dynamically */
+
   justify-items: center;
   align-items: center;
   padding: 10px;
