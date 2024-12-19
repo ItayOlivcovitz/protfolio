@@ -63,10 +63,7 @@
     padding: 0;
   }
 
-  /* Hide the Focused Visionary icon on mobile */
-  .icon-wrapper.centered {
-    display: none; /* Do not display this icon on mobile */
-  }
+
 
   .icon {
     width: 80px; /* Smaller circle on mobile */
