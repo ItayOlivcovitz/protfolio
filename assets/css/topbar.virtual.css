@@ -53,11 +53,10 @@
 
 /* Page */
 .vg-page {
-  position: relative;
-  display: block;
-  padding: 80px 0;
-  width: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-home {  
@@ -138,15 +137,19 @@
 }
 
 
-/* Add an overlay to the background image */
 .vg-page.page-mindset {
   position: relative;
-  background-image: url('assets/img/bg_banner.jpg');
-  background-size: cover;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-size: cover; /* Ensure the background image covers the section */
   background-position: center;
   background-repeat: no-repeat;
+  display: flex; /* Align content centrally */
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
 }
 
+/* Semi-transparent overlay */
 .vg-page.page-mindset::before {
   content: '';
   position: absolute;
@@ -154,8 +157,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(129, 123, 123, 0.633); /* Semi-transparent black overlay */
-  z-index: 1; /* Place it above the image */
+  background-color: rgba(62, 57, 57, 0.8);
+  z-index: 1;
+}
+
+/* Ensure the content stays on top of the overlay */
+.vg-page.page-mindset .container {
+  position: relative;
+  z-index: 2;
+  text-align: center; /* Center align all text */
+  color: white; /* Ensure text is visible over the dark overlay */
 }
 
 /* Ensure the content stays on top of the overlay */
