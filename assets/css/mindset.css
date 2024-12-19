@@ -2,8 +2,8 @@
 .icon-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 10px 5px; /* Reduced gap: 10px vertical, 5px horizontal */
-  max-width: 700px; /* Reduce max-width to tighten spacing */
+  gap: 15px 10px; /* Slightly increased gap for spacing */
+  max-width: 800px; /* Slightly larger container width */
   margin: auto;
   padding: 0;
   justify-items: center; /* Align items horizontally in the center */
@@ -11,44 +11,60 @@
   color: #f8f8f8; /* White color */
 }
 
+/* Hide scrollbar for horizontal scrolling (if necessary) */
+.icon-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
 
-
-/* icon wrapper for each item */
+/* Icon wrapper for each item */
 .icon-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px; /* Smaller spacing between icon and text */
+  gap: 6px; /* Adjust spacing between icon and text */
 }
 
-/* icon styles */
+/* Icon styles */
 .icon {
-  width: 100px; /* Smaller icon size */
-  height: 100px;
+  width: 100px; /* Increased width for larger icons */
+  height: 120px; /* Increased height for larger icons */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem; /* Icon size */
-  
+  font-size: 3rem; /* Adjust font size for larger icons */
+  text-align: center; /* Center-align text */
 }
-/* Ensure icons inside .icon are white */
+
+/* Ensure icons inside .icon are styled */
 .icon i {
-  color: #e2493b; /* White color */
+  font-size: 3rem; /* Increase size for font-based icons */
+  color: #e2493b; /* Icon color */
 }
 
-
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+  .icon-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+  .icon {
+    width: 100px; /* Adjust width for smaller screens */
+    height: 100px; /* Adjust height for smaller screens */
+  }
+  .icon i {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+}
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .icon-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-    gap: 30px 20px; /* Add spacing between rows and columns */
+    gap: 0px 20px; /* Add spacing between rows and columns */
     padding: 0;
   }
 
-  /* Center the last element on mobile */
+  /* Hide the Focused Visionary icon on mobile */
   .icon-wrapper.centered {
-    grid-column: span 2; /* Force the element to span 2 columns */
-    justify-self: center; /* Align it to the center */
+    display: none; /* Do not display this icon on mobile */
   }
 
   .icon {
@@ -73,4 +89,5 @@
     margin-top: 2px; /* Reduce space above the description */
   }
 }
+
 

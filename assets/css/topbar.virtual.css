@@ -171,7 +171,7 @@
 
 /* Move the title up */
 .vg-page.page-mindset h1 {
-  margin-top: 530px; /* Adjust to move the title up */
+  margin-top: -50px; /* Adjust to move the title up */
   position: relative; /* Ensure it moves relative to its position */
 }
 
