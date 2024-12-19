@@ -58,15 +58,13 @@
   padding: 80px 0;
   width: 100%;
   overflow: hidden;
-  min-height: 100vh; /* Ensure the page covers the full viewport height */
 }
 
 .page-home {  
   padding: 25px 0;
   width: 100%;
-  height: 100vh; /* Set to full viewport height for consistency */
+  height: 700px;
   z-index: 99;
-  overflow: hidden;
 }
 
 .page-home::before {
@@ -82,16 +80,17 @@
 
 .page-home .navbar {
   position: absolute;
-  top: 0;
+  top: auto;
   left: 0;
   width: 100%;
-  padding: 6px 1rem; /* Add some padding for better spacing */
+  padding-top: 6px;
+  padding-bottom: 6px;
   background-color: rgba(104, 102, 102, 0.8);
   z-index: 99;
-  transition: background-color 0.3s; /* Smooth background color change */
 }
 
 .page-home .navbar.floating {
+  top: 0;
   background-color: #343a40;
 }
 
@@ -103,31 +102,30 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100% - 50px); /* Adjust for navbar height */
+  height: 100%;
   color: #fff;
   z-index: 10;
-  text-align: center; /* Ensure text is centered on all devices */
 }
 
 .page-home h1 {
-  font-size: 2.5rem; /* Adjusted for better responsiveness */
-  margin-bottom: 1rem; /* Add spacing */
+  font-size: 50px;
 }
 
 .page-home .badge {
-  padding: 12px 18px;
+  padding: 16px 24px;
   background-color: rgba(239, 56, 36, 0.15);
   color: #EF3724;
   text-shadow: 0 2px 4px rgba(23, 25, 37, 0.4);
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 40px;
 }
 
 .page-home .floating-button {
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -137,13 +135,8 @@
   font-size: 21px;
   cursor: pointer;
   z-index: 10;
-  background: rgba(239, 56, 36, 0.8); /* Ensure the button is visible */
-  transition: background 0.3s; /* Add hover effect */
 }
 
-.page-home .floating-button:hover {
-  background: rgba(239, 56, 36, 1);
-}
 
 /* Add an overlay to the background image */
 .vg-page.page-mindset {
@@ -152,7 +145,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Ensure full height */
 }
 
 .vg-page.page-mindset::before {
@@ -163,7 +155,7 @@
   width: 100%;
   height: 100%;
   background: rgba(129, 123, 123, 0.633); /* Semi-transparent black overlay */
-  z-index: 1;
+  z-index: 1; /* Place it above the image */
 }
 
 /* Ensure the content stays on top of the overlay */
@@ -173,43 +165,6 @@
   padding: 20px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .page-home .caption-header {
-    padding: 1rem;
-  }
-
-  .page-home h1 {
-    font-size: 2rem;
-  }
-
-  .page-home .badge {
-    font-size: 12px;
-    padding: 10px 15px;
-  }
-
-  .page-home .navbar {
-    padding: 8px 1rem;
-  }
-
-  .page-home .floating-button {
-    bottom: 10px;
-    font-size: 18px;
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .page-home h1 {
-    font-size: 1.8rem;
-  }
-
-  .page-home .badge {
-    font-size: 10px;
-    padding: 8px 12px;
-  }
-}
 
 
 
