@@ -40,85 +40,37 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .icon-container {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(2, 1fr); /* Two icons per row */
-    gap: 30px 20px; /* Spacing between rows and columns */
-    padding: 10px 15px; /* Add padding around the container */
-    justify-items: center; /* Center-align items horizontally */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    gap: 30px 20px; /* Add spacing between rows and columns */
+    padding: 0;
   }
 
   /* Center the last element on mobile */
-  .icon-wrapper:last-child {
-    grid-column: span 2; /* Make the last icon span two columns */
-    justify-self: center; /* Center-align the last icon */
-  }
-
-  .icon-wrapper {
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack icon and text vertically */
-    align-items: center; /* Center-align content horizontally */
-    text-align: center; /* Center-align text */
-    gap: 10px; /* Add space between icon, title, and description */
-    min-height: 200px; /* Ensure uniform height */
+  .icon-wrapper.centered {
+    grid-column: span 2; /* Force the element to span 2 columns */
+    justify-self: center; /* Align it to the center */
   }
 
   .icon {
-    width: 70px; /* Icon size */
-    height: 70px;
-    font-size: 2.5rem; /* Icon font size */
-    margin-bottom: 5px; /* Space below the icon */
+    width: 80px; /* Smaller circle on mobile */
+    height: 80px;
+    font-size: 2rem;
+    margin-bottom: 4px; /* Reduce space below the icon */
   }
 
   .icon-text {
-    font-size: 0.9rem; /* Title font size */
-    font-weight: 600; /* Bold title */
-    margin: 0; /* Remove extra margins */
+    font-size: 0.9rem;
+    margin-bottom: 2px; /* Reduce space below the title */
   }
 
+  /* Compressed text style for description */
   .icon-description {
-    font-size: 0.85rem; /* Description font size */
-    line-height: 1.4; /* Improve readability */
-    max-width: 180px; /* Restrict width for better alignment */
-    margin: 0 auto; /* Center-align text */
+    font-size: 0.85rem; /* Smaller font size */
+    line-height: 1.2; /* Tighter line spacing */
+    max-width: 200px; /* Restrict the width of the text */
+    margin: 0 auto; /* Center-align the text */
+    text-align: center; /* Ensure text is centered */
+    margin-top: 2px; /* Reduce space above the description */
   }
 }
 
-/* Extra Small Screens */
-@media (max-width: 576px) {
-  .icon-container {
-    display: grid;
-    grid-template-columns: 2fr; /* One icon per row for smaller screens */
-    gap: 15px; /* Increased row spacing */
-    padding: 20px 15px; /* Add padding around the container */
-    justify-items: center; /* Center items horizontally */
-  }
-
-  .icon-wrapper {
-    min-height: auto; /* Remove fixed height for flexibility */
-    margin-bottom: -10px; /* Add space below each icon block */
-    text-align: center; /* Center align text */
-  }
-
-  .icon-wrapper:last-child {
-    grid-column: span 2; /* Ensure the last icon spans two columns */
-    justify-self: center; /* Center-align the last icon */
-  }
-
-  .icon {
-    width: 50px; /* Smaller icon size */
-    height: 50px;
-    font-size: 2rem; /* Icon font size */
-    margin-bottom: 0px; /* Add space below the icon */
-  }
-
-  .icon-text {
-    font-size: 0.85rem; /* Adjust title font size */
-    margin-bottom: 5px; /* Add space between title and description */
-  }
-
-  .icon-description {
-    font-size: 0.8rem; /* Adjust description font size */
-    line-height: 1.4; /* Improve readability */
-    margin-bottom: 20px; /* Add space between description and next icon */
-  }
-}

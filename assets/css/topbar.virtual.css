@@ -139,7 +139,7 @@
   z-index: 10;
 }
 
-
+/* Mindset Section Wrapper */
 .vg-page.page-mindset {
   position: relative;
   width: 100%;
@@ -147,9 +147,6 @@
   background-size: cover; /* Ensure the background image covers the section */
   background-position: center;
   background-repeat: no-repeat;
-  display: flex; /* Align content centrally */
-  align-items: center; /* Vertical center alignment */
-  justify-content: center; /* Horizontal center alignment */
 }
 
 /* Semi-transparent overlay */
@@ -160,7 +157,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(62, 57, 57, 0.8);
+  background-color: rgba(62, 57, 57, 0.8); /* Semi-transparent overlay */
   z-index: 1;
 }
 
@@ -168,8 +165,14 @@
 .vg-page.page-mindset .container {
   position: relative;
   z-index: 2;
-  text-align: center; /* Center align all text */
+  text-align: center;
   color: white; /* Ensure text is visible over the dark overlay */
+}
+
+/* Move the title up */
+.vg-page.page-mindset h1 {
+  margin-top: 530px; /* Adjust to move the title up */
+  position: relative; /* Ensure it moves relative to its position */
 }
 
 /* Ensure the content stays on top of the overlay */
