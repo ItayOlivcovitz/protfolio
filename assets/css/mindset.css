@@ -40,68 +40,37 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .icon-container {
-    display: grid; /* Grid layout for better spacing */
-    grid-template-columns: repeat(2, 1fr); /* Two icons per row */
-    gap: 20px 10px; /* Slightly adjust row and column spacing */
-    padding: 15px; /* Add padding around the container */
-    justify-items: center; /* Center align all items */
+    display: grid; /* Ensure the grid layout is active */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    gap: 16px 10px; /* Improved spacing between items */
+    padding: 0 10px; /* Add horizontal padding to prevent content from touching the edges */
   }
 
   /* Center the last element on mobile */
   .icon-wrapper.centered {
-    grid-column: span 2; /* Span across both columns */
-    justify-self: center; /* Center-align the element */
-    margin-top: 20px; /* Add space above for better layout */
+    grid-column: span 2; /* Force the element to span 2 columns */
+    justify-self: center; /* Align it to the center */
   }
 
   .icon {
-    width: 65px; /* Slightly reduce icon size */
-    height: 65px;
-    font-size: 2.2rem; /* Adjust font size for clarity */
-    margin-bottom: 8px; /* Add space below the icon */
+    width: 70px; /* Adjusted size for smaller screens */
+    height: 70px;
+    font-size: 2rem; /* Keep icon readable */
+    margin-bottom: 8px; /* Add spacing below the icon */
   }
 
   .icon-text {
-    font-size: 0.95rem; /* Slightly reduce text size */
-    margin-bottom: 4px; /* Adjust spacing below title */
-    font-weight: 600; /* Make it more prominent */
+    font-size: 1rem; /* Slightly larger for readability */
+    font-weight: 600; /* Bold for emphasis */
+    margin-bottom: 4px; /* Add spacing below the text */
   }
 
+  /* Compressed text style for description */
   .icon-description {
-    font-size: 0.85rem; /* Adjust description size */
-    line-height: 1.3; /* Improved line spacing for readability */
-    max-width: 160px; /* Restrict width for better alignment */
-    margin: 0 auto; /* Center the text block */
-    text-align: center; /* Center-align the description */
+    font-size: 0.9rem; /* Adjusted font size for mobile readability */
+    line-height: 1.4; /* Improved line spacing for readability */
+    max-width: 180px; /* Restrict width for better alignment */
+    margin: 0 auto; /* Center-align the text block */
+    text-align: center; /* Ensure text is centered */
   }
 }
-
-/* Extra Small Screens */
-@media (max-width: 576px) {
-  .icon-container {
-    grid-template-columns: 1fr; /* One icon per row for smaller screens */
-    gap: 15px; /* Adjust spacing */
-  }
-
-  .icon-wrapper.centered {
-    margin-top: 30px; /* Add extra space above the centered icon */
-  }
-
-  .icon {
-    width: 60px; /* Slightly smaller icons */
-    height: 60px;
-    font-size: 2rem;
-  }
-
-  .icon-text {
-    font-size: 0.9rem; /* Adjust title size */
-    margin-bottom: 4px;
-  }
-
-  .icon-description {
-    font-size: 0.8rem; /* Further reduce description font size */
-    line-height: 1.3;
-  }
-}
-
-
