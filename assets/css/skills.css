@@ -1,71 +1,30 @@
-.icon-container {
+.skills-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
-  gap: 15px;
-  max-width: 800px;
-  margin: auto;
-  padding: 10px;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 items per row */
+  gap: 20px;
   justify-items: center;
-  text-align: center;
-  color: #f8f8f8;
-}
-
-.icon-wrapper {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2px; /* Reduced gap between icon and description */
+  padding: 10px;
 }
-
-.icon {
-  width: 100px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-}
-
-.icon-description {
-  margin-top: 0; /* Eliminate unnecessary gap */
-  font-size: 0.85rem;
-  line-height: 1.2;
-  max-width: 180px;
+.skill-item {
   text-align: center;
+  padding: 10px;
 }
-
+.skill-item img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+/* Tablet Screens (768px and below) */
 @media (max-width: 768px) {
-  .icon-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-    gap: 10px;
-  }
-
-  .icon {
-    width: 80px;
-    height: 80px;
-    font-size: 2rem;
-  }
-
-  .icon-description {
-    font-size: 0.8rem;
-    max-width: 140px;
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
   }
 }
-
+/* Mobile Screens (480px and below) */
 @media (max-width: 480px) {
-  .icon-container {
-    grid-template-columns: repeat(1, 1fr); /* 1 column for small devices */
-    gap: 15px;
-  }
-
-  .icon {
-    width: 70px;
-    height: 70px;
-    font-size: 1.8rem;
-  }
-
-  .icon-description {
-    font-size: 0.75rem;
-    max-width: 120px;
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 10px; /* Optional: Adjust gap for smaller screens */
   }
 }
+

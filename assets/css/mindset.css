@@ -1,13 +1,13 @@
 /* Container for grid layout */
 .icon-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 15px 10px; /* Slightly increased gap for spacing */
-  max-width: 800px; /* Slightly larger container width */
-  margin: auto;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 15px 10px; /* Consistent gap between items */
+  max-width: 800px; /* Limit container width */
+  margin: auto; /* Center the container horizontally */
   padding: 0;
-  justify-items: center; /* Align items horizontally in the center */
-  text-align: center; /* Center-align text under circles */
+  justify-items: center; /* Center items in their grid cells */
+  text-align: center; /* Center-align text under icons */
   color: #f8f8f8; /* White color */
 }
 
@@ -21,90 +21,63 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px; /* Adjust spacing between icon and text */
+  gap: 6px; /* Spacing between icon and text */
 }
 
 /* Icon styles */
 .icon {
-  width: 100px; /* Increased width for larger icons */
-  height: 120px; /* Increased height for larger icons */
+  width: 100px; /* Default width for icons */
+  height: 100px; /* Default height for icons */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem; /* Adjust font size for larger icons */
-  text-align: center; /* Center-align text */
+  font-size: 3rem; /* Icon size */
+  text-align: center;
+  margin-bottom: 4px; /* Space below the icon */
 }
 
-/* Ensure icons inside .icon are styled */
+/* Font-based icon styles */
 .icon i {
-  font-size: 3rem; /* Increase size for font-based icons */
+  font-size: 3rem; /* Larger font-based icon size */
   color: #e2493b; /* Icon color */
 }
 
-/* Responsive adjustments for tablets */
-@media (max-width: 768px) {
-  .icon-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px; /* Reduce the gap for better fit */
-    padding: 0 10px; /* Add some padding to prevent clipping */
-  }
-  .icon {
-    width: 70px; /* Smaller circle on mobile */
-    height: 70px;
-    font-size: 1.8rem; /* Adjust font size */
-  }
-  .icon i {
-    font-size: 1.8rem; /* Smaller icon size */
-  }
-
-  /* Reduce gap between icon and description */
-.icon-wrapper {
-  gap: -4px; /* Decrease spacing between the elements in the icon-wrapper */
-}
-
-/* Reduce margin above and below the description */
+/* Text styles under icons */
 .icon-description {
-  margin-top: 4px; /* Reduce the space between the description and the title */
-  font-size: 0.85rem; /* Ensure text fits well */
-  line-height: 1.2; /* Tighter line spacing for better compactness */
+  font-size: 0.9rem;
+  line-height: 1.4; /* Better readability */
+  margin-top: 4px; /* Space above the description */
+  max-width: 200px; /* Restrict text width */
 }
 
-}
-
-/* Mobile Responsive */
+/* Responsive adjustments for tablets and mobile */
 @media (max-width: 768px) {
   .icon-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-    gap: 0px 20px; /* Add spacing between rows and columns */
-    padding: 0;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    gap: 10px; /* Reduce gap for better fit */
+    padding: 0 10px; /* Add padding to prevent clipping */
   }
 
-  /* Hide the Focused Visionary icon on mobile */
   .icon-wrapper.centered {
-    display: none; /* Do not display this icon on mobile */
+    grid-column: 1 / -1; /* Make it span all columns on mobile as well */
+    justify-self: center; /* Center it horizontally in the grid */
+    text-align: center; /* Ensure text stays centered */
   }
 
   .icon {
     width: 80px; /* Smaller circle on mobile */
     height: 80px;
-    font-size: 2rem;
-    margin-bottom: 4px; /* Reduce space below the icon */
+    font-size: 2rem; /* Adjust font size */
   }
 
-  .icon-text {
-    font-size: 0.9rem;
-    margin-bottom: 2px; /* Reduce space below the title */
+  .icon i {
+    font-size: 2rem; /* Adjust icon size */
   }
 
-  /* Compressed text style for description */
+  /* Adjust text styles for smaller screens */
   .icon-description {
-    font-size: 0.85rem; /* Smaller font size */
-    line-height: 1.2; /* Tighter line spacing */
-    max-width: 200px; /* Restrict the width of the text */
-    margin: 0 auto; /* Center-align the text */
-    text-align: center; /* Ensure text is centered */
+    font-size: 0.85rem; /* Smaller font for mobile */
+    line-height: 1.2; /* Tighter spacing */
     margin-top: 2px; /* Reduce space above the description */
   }
 }
-
-
