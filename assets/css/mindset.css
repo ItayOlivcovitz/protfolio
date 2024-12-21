@@ -59,9 +59,7 @@
   }
 
   .icon-wrapper.centered {
-    grid-column: 1 / -1; /* Make it span all columns on mobile as well */
-    justify-self: center; /* Center it horizontally in the grid */
-    text-align: center; /* Ensure text stays centered */
+    display: none; /* Hide the centered icon on smaller screens */
   }
 
   .icon {
